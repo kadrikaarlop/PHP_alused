@@ -36,4 +36,4 @@ for($rida = 1; $rida <= 5; $rida++) {
     }
         echo '<p style = "color: '.$varv.'">.$arv.';
     }
-'</table>';    
+'</table>';
