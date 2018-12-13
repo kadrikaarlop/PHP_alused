@@ -10,8 +10,6 @@
 // teksti väljastus echo-käsuga
 echo 'See tekst on htmli sees'.'<br>';
 
-
 ?>
-
     </body>
 </html>
