@@ -8,12 +8,19 @@
 
 echo '<h4>Tingimuslaused</h4>';
 
-$arv = rand(0, 100);
-$varv = ' ';
+$foor ='punane';
 
-if($arv >= 0 and $arv < 25) {
-    $varv ='green';
-    } else if($arv >=25 and $arv < 50) {
-    $varv = 'red';
- } else if ($arv >=75 and $arv < 100) {
-    }
+
+switch ($foor){
+    case 'punane':
+        echo '<p style = "color: red">Punane tuli</p>';
+        break;
+    case 'kollane':
+        echo '<p style = "color: orange">Kollane tuli</p>';
+        break;
+    case 'roheline':
+        echo '<p style = "color: green">Roheline tuli</p>';
+        break;
+    default:
+        echo '<p>Mingi muu!</p>';
+}
