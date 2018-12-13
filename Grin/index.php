@@ -1,11 +1,16 @@
+<!doctype html>
+<body>
+    <head>
+        <title>Php_alused - väljastus</title>
+    </head>
+    <body>
+    <h4>Väljastus</h4>
 <?php
 
-//teksti väljastus print käsuga
-print 'See on esimene lause PHP-keeles'.'<br>';
-print 'See on teine lause'.'<br>';
 // teksti väljastus echo-käsuga
-echo 'See tekst on echo abil väljastatud'.'<br>';
-
+echo 'See tekst on htmli sees'.'<br>';
 
 
 ?>
+</body>
+</html>
