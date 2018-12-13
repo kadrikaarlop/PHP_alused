@@ -8,15 +8,12 @@
 
 echo '<h4>Tingimuslaused</h4>';
 
-$arv = 2;
+$arv = rand(0, 100);
+$varv = ' ';
 
-if($arv % 2 == 0) {
-
-    echo '<p style ="color: green">'.$arv.'</p >;
-
-    } else {
-
-    echo '<p style ="color: red">'.$arv.'</p>';
-
-
-}
+if($arv >= 0 and $arv < 25) {
+    $varv ='green';
+    } else if($arv >=25 and $arv < 50) {
+    $varv = 'red';
+ } else if ($arv >=75 and $arv < 100) {
+    }
