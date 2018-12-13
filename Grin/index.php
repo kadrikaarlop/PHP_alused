@@ -1,9 +1,9 @@
 <!doctype html>
-<body>
+<html>
     <head>
         <title>Php_alused - väljastus</title>
     </head>
-    <body>
+<body>
     <h4>Väljastus</h4>
 <?php
 
@@ -12,5 +12,6 @@ echo 'See tekst on htmli sees'.'<br>';
 
 
 ?>
-</body>
+
+    </body>
 </html>
