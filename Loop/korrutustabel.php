@@ -45,3 +45,21 @@ for($arv1 = 1; $arv1 <= 10; $arv1++){
 echo '</table>'; // tabeli lõpp
 
 echo "<hr>";
+
+$arv =123;
+
+$numbriteSumma = 0;
+while ($arv != 0) {
+    //leiame numbri
+    $number = $arv % 10;
+    // valmistame arvu järgmiseks tsükli sammuks
+    echo 'Number = ' . $number . '<br>';
+    $arv = $arv / 10;
+    echo 'Uus arv on ' . $arv . '<br>';
+    echo 'Hetkel summa = ' . $numbriteSumma . '<br>';
+
+    //leiame hetkel oleva arvude summa
+    $numbriteSumma = $numbriteSumma + $number;
+    echo 'Hetkel summa = '.$numbriteSumma.'<br>'
+}
+echo '<b>Lõplik summa = '.$numbriteSumma.'<br></b>;'
