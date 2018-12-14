@@ -43,3 +43,5 @@ for($arv1 = 1; $arv1 <= 10; $arv1++){
     echo '</tr>'; // rea lõpp
 }
 echo '</table>'; // tabeli lõpp
+
+echo "<hr>";
