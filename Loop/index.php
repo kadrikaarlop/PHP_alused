@@ -11,29 +11,15 @@
 
 echo '<h4>Tsüklid - for </h4>';
 
-$varv = ' ';
-for($arv = 1; $arv <= 10; $arv++) {
-    if ($arv % 2 == 0) {
-        $varv = 'green';
-    } else {
-        $varv = 'red';
-    }
-    echo '<p style = "color: ' . $varv . '">.$arv.';
-}
-
-
 echo '<table>';
-
-for($rida = 1; $rida <= 5; $rida++) {
-    $varv = '#';
-    for($kord = ; $kord <= 6; $kord)
-    $varv = '#'.rand(0,9).rand(0,9).rand(0,9);
-    echo ''
-    if($arv % 2 == 0) {
-        $varv = 'green';
-    } else {
-        $varv = 'red';
+for($arv = 1; $arv <= 10; $arv1++){
+    echo '<tr>';
+    for($arv2 = 1; $arv2 <= 10; $arv2++) {
+        echo $arv1;
     }
-        echo '<p style = "color: '.$varv.'">.$arv.';
+        echo ($arv1 * $arv2).'<td>';
     }
+    echo '<td style = "width: 20 px; text-align: center; border: solid black;">
+    echo '</td>';
+} echo '</tr>
 echo '</table>';
