@@ -15,6 +15,7 @@ for($rida = 1; $rida <= 5; $rida++){
     echo '</tr>';
 }
 echo '</table>';
+
 echo '<hr>';
 // korrutustabel
 echo '<table style="border-collapse: collapse">';
