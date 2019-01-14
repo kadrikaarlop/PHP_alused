@@ -27,5 +27,16 @@ for($i = 0; $i < count($kasutajad); $i++){
     echo '<hr>';
 }
 
+$charachter = array(
+    name=>"bob",
+    occupation=>"superhero",
+    age=>30,
+    "special power"=>"x-ray vision"
+);
+print $charachter[age];
 
+$charachter[name] = "bob";
+$charachter[occupation]="superhero";
+$charachter[age] = 30;
+$charachter["special power"] = "x-ray vision";
 

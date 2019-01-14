@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Funktsioonid -väljakutsumine -print()funktsioon</title>
+    <title>Funktsioonid - väljakutsumine -print()funktsioon</title>
 </head>
 <body>
 <?php
