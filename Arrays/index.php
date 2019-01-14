@@ -27,6 +27,8 @@ for($i = 0; $i < count($kasutajad); $i++){
     echo '<hr>';
 }
 
+// Sidestatud massiivid
+
 $charachter = array(
     name=>"bob",
     occupation=>"superhero",
@@ -40,3 +42,14 @@ $charachter[occupation]="superhero";
 $charachter[age] = 30;
 $charachter["special power"] = "x-ray vision";
 
+$charachter = array(
+    array ( name=>"bob",
+        occupation=>"superhero",
+        age=>30,
+        speciality=>"x-ray vision" )
+        array ( name=>"sally",
+            occupation=>"superhero",
+            age=>24,
+        )
+);
+?>
