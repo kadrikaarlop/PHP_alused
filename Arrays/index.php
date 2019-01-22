@@ -136,7 +136,7 @@ echo '<hr>';
 echo '<br>';
 
 //Massiivide juhtimine
-//Massiivine ühendamine array_merge () funktsiooni abil
+//Massiivine ühendamine array_merge() funktsiooni abil
 
 $esimene =array("a", "b", "c");
 $teine = array(1, 2, 3);
@@ -147,5 +147,17 @@ foreach ($kolmas as $val)
 }
 echo '<hr>';
 echo '<br>';
+
+//Esimese elemendi kustutamine array_shift() funktsiooni abil
+
+$yks_massiiv = array("a", "b", "c", "d", "e");
+while (count($yks_massiiv)) {
+    $val = array_shift($yks_massiiv);
+    print "$val<br>";
+    print "Siin on " . count($yks_massiiv) . "elementi in \$yks_massiiv <br>";
+}
+
+}
+
 
 ?>
