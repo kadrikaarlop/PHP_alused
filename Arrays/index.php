@@ -176,4 +176,13 @@ foreach($yks_massiiv as $var)
     print "4var<br>";
 }
 
+//Sidestatud massiivi sorteerimine asort() funktsiooni abil
+
+$yks_massiiv = array("esimene"=>5, "teine"=>8, "kolmas"=>9);
+asort($esimene);
+foreach ($esimene as $key => $val)
+{
+    print "$key =$val<br>";
+}
+
 
