@@ -73,6 +73,7 @@ print $kasutajad [4];
 $users = array('Kadri', 'Merle', 'Merliti', 'Rando');
 print $users[count($users)-2];
 echo '<br>';
+echo '<br>';
 
 //Massiivi läbivaatamine tsükli abil
 
@@ -96,4 +97,39 @@ foreach ($charachter as $key=>$value )
     print "$key=$value<br>";
 }
 echo '<br>';
+
+//Mitmemõõtmelise massiivi väljastamine
+
+$charachters = array(
+
+    array ('name'=>"bob",
+        'occupation'=>"superhero",
+        'age'=>'30',
+        'special power'=>'x-ray vision'),
+
+    array(
+        'name'=>"sally",
+        'occupation'=>"superhero",
+        'age'=>'24',
+        'special power'=>'superhuman strenght'),
+
+    array(
+        'name'=>"mary",
+        'occupation'=>"arch villain",
+        'age'=>'63',
+        'special power'=>'nanotechnology')
+    );
+
+    foreach ($charachters as $val)
+    {
+    foreach ( $val as $key=>$final_val)
+    {
+        print "$key:$final_val<br>";
+    }
+        print "<br>";
+    }
+echo '<br>';
+
+
+    
 ?>
