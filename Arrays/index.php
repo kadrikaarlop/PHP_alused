@@ -185,4 +185,13 @@ foreach ($esimene as $key => $val)
     print "$key =$val<br>";
 }
 
+//Sidestatud massiivi sorteerimine ksort() funktsiooni abil
+
+$yks_massiiv = array("a"=>5, "g"=>8, "c"=>9);
+ksort($esimene);
+foreach ($esimene as $key => $val)
+{
+    print "$key =$val<br>";
+}
+
 
