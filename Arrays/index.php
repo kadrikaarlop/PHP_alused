@@ -29,29 +29,37 @@ for($i = 0; $i < count($kasutajad); $i++){
 
 // Sidestatud massiivid
 
-
-$charachter = array(
-    name=>"bob",
-    occupation=>"superhero",
-    age=>30,
+$charachter = array (
+    'name'=>"bob",
+    'occupation'=>"superhero",
+    'age'=>30,
     "special power"=>"x-ray vision"
 );
-print $charachter[age];
+print $charachter['age'];
 
-$charachter[name] = "bob";
-$charachter[occupation]="superhero";
-$charachter[age] = 30;
+$charachter['name'] = "bob";
+$charachter['occupation']="superhero";
+$charachter['age'] = 30;
 $charachter["special power"] = "x-ray vision";
 
+//Mitmemõõtelised massiivid
 $charachter = array(
-    array ( name=>"bob",
-        occupation=>"superhero",
-        age=>30,
-        speciality=>"x-ray vision" )
-        array ( name=>"sally",
-            occupation=>"superhero",
-            age=>24,
-        )
+    array (
+        'name'=>"bob",
+        'occupation'=>"superhero",
+        'age'=>30,
+        'speciality'=>"x-ray vision"
+    ),
+    array (
+        'name'=>"sally",
+        'occupation'=>"superhero",
+        'age'=>24,
+    )
 );
+
+
+echo '<pre>';
+print_r($charachter);
+echo '</pre>';
 
 ?>
