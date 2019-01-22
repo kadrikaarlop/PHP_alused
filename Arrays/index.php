@@ -80,7 +80,7 @@ foreach ($users as $val )
 {
 print "$val<br>";
 }
-
+echo '<br>';
 //Sidestatud massiivi läbivaatamine tsüklis
 
 $charachter = array (
@@ -94,4 +94,5 @@ foreach ($charachter as $key=>$value )
 {
     print "$key=$value<br>";
 }
+echo '<br>';
 ?>
