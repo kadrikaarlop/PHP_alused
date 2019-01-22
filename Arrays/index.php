@@ -173,7 +173,7 @@ $yks_massiiv = array("k", "a", "d", "r", "i");
 sort($yks_massiiv);
 foreach($yks_massiiv as $var)
 {
-    print "4var<br>";
+    print "var<br>";
 }
 
 //Sidestatud massiivi sorteerimine asort() funktsiooni abil
@@ -193,5 +193,4 @@ foreach ($esimene as $key => $val)
 {
     print "$key =$val<br>";
 }
-
 
