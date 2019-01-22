@@ -90,9 +90,8 @@ $charachter = array (
         'special power'=>'x-ray vision'
 );
 
-foreach ('$charachter' as '$tegelane'=>$value )
+foreach ($charachter as $key=>$value )
 {
-    print '$tegelane' = $val<br>";
+    print "$key=$value<br>";
 }
-
 ?>
