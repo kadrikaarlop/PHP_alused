@@ -66,11 +66,19 @@ echo '</pre>';
 
 //Massiivi suuruse kättesaamine
 
-print $kasutajad [4]
+print $kasutajad [4];
 
 //Funktsiooni kasutamine viimasele elemendile juurdepääsu teostamiseks
 
-$users = array('Kadri', 'Merle', 'Merliti');
-print $users[count($users)-1];
+$users = array('Kadri', 'Merle', 'Merliti', 'Rando');
+print $users[count($users)-2];
+//Väljastab 'Merle'
 
+//Massiivi läbivaatamine tsükli abil
+
+$users = array('Kadri', 'Merle', 'Merliti', 'Rando');
+foreach ($users as $val )
+{
+print "$val<br>";
+}
 ?>
