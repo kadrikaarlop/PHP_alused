@@ -157,7 +157,6 @@ while (count($yks_massiiv)) {
     print "Siin on " . count($yks_massiiv) . "elementi in \$yks_massiiv <br>";
 }
 
-}
 
 
 ?>
