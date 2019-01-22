@@ -74,6 +74,7 @@ $users = array('Kadri', 'Merle', 'Merliti', 'Rando');
 print $users[count($users)-2];
 echo '<br>';
 echo '<br>';
+echo '<hr>';
 
 //Massiivi läbivaatamine tsükli abil
 
@@ -83,6 +84,8 @@ foreach ($users as $val )
 print "$val<br>";
 }
 echo '<br>';
+echo '<hr>';
+
 //Sidestatud massiivi läbivaatamine tsüklis
 
 $charachter = array (
@@ -97,6 +100,7 @@ foreach ($charachter as $key=>$value )
     print "$key=$value<br>";
 }
 echo '<br>';
+echo '<hr>';
 
 //Mitmemõõtmelise massiivi väljastamine
 
@@ -128,7 +132,20 @@ $charachters = array(
     }
         print "<br>";
     }
+echo '<hr>';
 echo '<br>';
 
+//Massiivide juhtimine
+//Massiivine ühendamine array_merge () funktsiooni abil
+
+$esimene =array("a", "b", "c");
+$teine = array(1, 2, 3);
+$kolmas =array_merge($esimene, $teine);
+foreach ($kolmas as $val)
+{
+    print "@val<br>";
+}
+echo '<hr>';
+echo '<br>';
 
 ?>
