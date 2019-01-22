@@ -162,8 +162,18 @@ while (count($yks_massiiv)) {
 $esimene = array("k", "a", "d", "r", "i");
 $teine = array_slice($esimene, 2, 3);
 foreach ($teine as $var)
-}
+{
 print "$var<br>";
+}
+
+//Massiivide sorteerimine
+//Tavalise massiivi sorteerimine sort() funktsiooni abil
+
+$yks_massiiv = array("k", "a", "d", "r", "i");
+sort($yks_massiiv);
+foreach($yks_massiiv as $var)
+{
+    print "4var<br>";
 }
 
 
