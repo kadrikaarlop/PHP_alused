@@ -131,5 +131,4 @@ $charachters = array(
 echo '<br>';
 
 
-    
 ?>
