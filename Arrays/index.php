@@ -29,6 +29,7 @@ for($i = 0; $i < count($kasutajad); $i++){
 
 // Sidestatud massiivid
 
+
 $charachter = array(
     name=>"bob",
     occupation=>"superhero",
