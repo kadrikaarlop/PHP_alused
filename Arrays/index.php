@@ -143,7 +143,7 @@ $teine = array(1, 2, 3);
 $kolmas =array_merge($esimene, $teine);
 foreach ($kolmas as $val)
 {
-    print "@val<br>";
+    print "$val<br>";
 }
 echo '<hr>';
 echo '<br>';
@@ -157,6 +157,13 @@ while (count($yks_massiiv)) {
     print "Siin on " . count($yks_massiiv) . "elementi in \$yks_massiiv <br>";
 }
 
+//Massiivi osa eraldamine funktsiooni array_slice() abil
+
+$esimene = array("k", "a", "d", "r", "i");
+$teine = array_slice($esimene, 2, 3);
+foreach ($teine as $var)
+}
+print "$var<br>";
+}
 
 
-?>
