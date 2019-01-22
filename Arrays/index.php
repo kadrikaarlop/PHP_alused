@@ -54,12 +54,23 @@ $charachter = array(
         'name'=>"sally",
         'occupation'=>"superhero",
         'age'=>24,
-    )
-);
+        'speciality'=>"nanotechnology" )
+    );
 
+print $charachter [0] ['occupation'];
+print $charachter [2] ['age'];
 
 echo '<pre>';
 print_r($charachter);
 echo '</pre>';
+
+//Massiivi suuruse kättesaamine
+
+print $kasutajad [4]
+
+//Funktsiooni kasutamine viimasele elemendile juurdepääsu teostamiseks
+
+$users = array('Kadri', 'Merle', 'Merliti');
+print $users[count($users)-1];
 
 ?>
