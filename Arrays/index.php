@@ -72,7 +72,6 @@ print $kasutajad [4];
 
 $users = array('Kadri', 'Merle', 'Merliti', 'Rando');
 print $users[count($users)-2];
-//Väljastab 'Merle'
 
 //Massiivi läbivaatamine tsükli abil
 
@@ -81,4 +80,19 @@ foreach ($users as $val )
 {
 print "$val<br>";
 }
+
+//Sidestatud massiivi läbivaatamine tsüklis
+
+$charachter = array (
+        'name'=>"bob",
+        'occupation'=>"superhero",
+        'age'=>'30',
+        'special power'=>'x-ray vision'
+);
+
+foreach ('$charachter' as '$tegelane'=>$value )
+{
+    print '$tegelane' = $val<br>";
+}
+
 ?>
