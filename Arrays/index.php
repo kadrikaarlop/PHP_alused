@@ -72,6 +72,7 @@ print $kasutajad [4];
 
 $users = array('Kadri', 'Merle', 'Merliti', 'Rando');
 print $users[count($users)-2];
+echo '<br>';
 
 //Massiivi läbivaatamine tsükli abil
 
