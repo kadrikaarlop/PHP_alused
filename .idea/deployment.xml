@@ -5,7 +5,7 @@
       <paths name="ikt">
         <serverdata>
           <mappings>
-            <mapping deploy="/public_html/PHP_alused" local="$PROJECT_DIR$/../Vorm" web="/vorm" />
+            <mapping deploy="/public_html/PHP_alused" local="$PROJECT_DIR$" web="/PHP_alused" />
           </mappings>
         </serverdata>
       </paths>
