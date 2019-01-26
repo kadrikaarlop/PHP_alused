@@ -16,5 +16,9 @@ function keraRuumala($keraRaadius){
 // pow on astendamine pow(value, power), alguses väärtus ja siis aste
 // pi() on float - Pii=3,14
 
+function koonuseRuumala($koonuseRaadius, $koonuseKorgus){
+    return 1/3 * pi() * pow($koonuseRaadius, 2) * $koonuseKorgus;
+}
+
 
 ?>
