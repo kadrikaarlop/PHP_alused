@@ -3,7 +3,8 @@
  * @param $hostName
  * @param $dbUser
  * @param $dbPass
- * @param mysqli
+ * @param $dbName
+ * @return mysqli
  * Funktsioon, mis tekitab ühenduse andmebaasiga
  */
 function connect_db($hostName, $dbUser, $dbPass, $dbName)
@@ -29,10 +30,21 @@ function connect_db($hostName, $dbUser, $dbPass, $dbName)
 //localhost - veebiserver ja andmebaasiserver asuvad samas ikt masinas
 
 require_once 'conf.php';
-$iktConn = connect_db( DBHOST, DBUSER,  DBPASS, DBNAME);
-//vaatame ühenduse sisu testkujul
+require_once  'db_fnk.php';
+
+$iktConn = connect_db(DBHOST,DBUSER,DBPASS,DBNAME);
+//insert/update tüüpi sql testiumine
+
+$sql = 'UPDATE user SET last_name="Ebatavaline" WHERE user_id=1';
+$res = query($sql, $iktConn);
+
+// select tüüpi testimine
+$sql = 'SELECT * FROM user';
+$users = getData($sql, $iktConn);
 echo '<pre>';
-print_r($iktConn);
+print_r($users);
 echo '</pre>';
+
+echo 'Tere, '.$users[0]['first_name'].' '.$users[0]['last_name'].'<br>';
 
 ?>
