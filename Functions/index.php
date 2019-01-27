@@ -40,6 +40,19 @@ printBR('See on rida');
 printBR('See on juba uus rida');
 printBR('Vaata, siin on veel üks rida');
 
+// Et funktsioon töötaks, on sulgude sees muutuja $txt
+//Väärtus, mis me anname f-i väljakutsumise hetkel,
+//sisestatakse muutuja sisse
+
+//Funktsioon, mis tagastab väärtuseid
+
+function addNums($esimenenumber, $teinenumber)
+{
+    $vastus = $esimenenumber + $teinenumber;
+    return $vastus; 11;
+}
+    print addNums(3,5);
+
 
 
 ?>
