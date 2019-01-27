@@ -27,8 +27,4 @@ function silindriRuumala($silindriRaadius, $silindriKorgus){
     return pi() * pow($silindriRaadius, 2) * $silindriKorgus;
 }
 
-
-
-
-
 ?>
