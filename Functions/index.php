@@ -22,6 +22,18 @@ function some_function ($argument_1, $argument_2)
 }
 
 
+// Funksioon bighello ei kasuta argumente
+
+function bighello()
+{
+    print '<h1>HELLO!</h1>';
+}
+bighello()
+
+
+
+
+
 ?>
 </body>
 </html>
