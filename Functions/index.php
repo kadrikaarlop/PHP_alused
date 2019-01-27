@@ -52,10 +52,21 @@ function addNums($esimenenumber, $teinenumber)
     return $vastus; 11;
 }
     print addNums(3,5);
+//Funktsioon kutsuti välja kahearvulise argumendiga
+echo "<br>";
 
+//Funktsiooni dünaamilised väljakutsed
 
-
+function ytleTere()
+{
+    print "tere<br>";
+}
+$function_hoidja = "ytleTere";
+$function_hoidja();
+//muutujasse salvestatakse sõne
+//lisades f-i nimele sulud, saame f-i välja kutsuda
 ?>
+
 </body>
 </html>
 
