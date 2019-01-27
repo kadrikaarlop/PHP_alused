@@ -28,9 +28,17 @@ function bighello()
 {
     print '<h1>HELLO!</h1>';
 }
-bighello()
+bighello();
 
+//Funktsioon argumentidega
 
+function printBR($txt)
+{
+    print("$txt<br>\n");
+}
+printBR('See on rida');
+printBR('See on juba uus rida');
+printBR('Vaata, siin on veel üks rida');
 
 
 
