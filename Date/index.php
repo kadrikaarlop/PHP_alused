@@ -65,4 +65,11 @@ echo strtotime("4pm yesterday");
 echo strtotime("6am 10 days ago");
 echo'<br>';
 
+//Kuupäeva valideerimine
+//Kontrollitakse, kas selline kuupäev eksisteerib
+if(checkdate(12,32,2013)) {
+    echo('Kuupäev korras!');
+} else {
+    echo ('Kuupäev on valesti sisestatud');
+}
 
