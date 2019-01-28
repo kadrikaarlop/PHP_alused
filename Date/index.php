@@ -35,5 +35,3 @@ mktime(tunnid, minutid, sekundid, kuu, päev, aasta, suveaeg);
 echo '<br>';
 $sp = mktime(0,0,0,5,5,1983);
 echo date('d.m.Y', $sp);
-//Lisades 1, lülitad suveaja sisse ja 0 välja. Kui ei lisa, PHP valib ise.
-
