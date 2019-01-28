@@ -6,3 +6,4 @@ function htmlFromFile($fileName){
     fclose($fp);
     return $content;
 }
+

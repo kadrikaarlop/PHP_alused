@@ -13,7 +13,7 @@ $sql = 'SELECT * FROM user WHERE username="'.$username.'" AND password="'.md5($p
 $users = getData($sql, $ikt);
 
 // väljastame andmed
-//echo $users[0]['first_name'].' '.$users[0]['last_name']
+//echo $users[0]['first_name'].' '.$users[0]['last_name'];
 
 //Loome kasutaja sessiooni, kui ta on andmebaasis olemas
 
