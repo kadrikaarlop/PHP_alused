@@ -17,7 +17,6 @@ print_r($users);
 echo '</pre>';
 echo 'Tere, '.$users[0]['first_name'].' '.$users[0]['last_name'].'<br>';
 
-gdgdgdgh
 ?>
 
 

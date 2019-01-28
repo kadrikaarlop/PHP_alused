@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 -- Database: `kadrikaa_php`
 --
 CREATE DATABASE IF NOT EXISTS `kadrikaa_php` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `kadrikaa_php`_php`;
+USE `kadrikaa_php`;
 
 -- --------------------------------------------------------
 
