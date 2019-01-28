@@ -73,3 +73,62 @@ if(checkdate(12,32,2013)) {
     echo ('Kuupäev on valesti sisestatud');
 }
 
+echo '<br>';
+//Harjutamine - Ülesanded
+
+//Kuva kuupäev ja kellaaeg formaadis 20.03.2013 12:31
+echo date('d.m.Y G:i' , time()).'<br>';
+
+//Kuva tänane eestikeelne nädalapäev, N: kolmapäev
+$eesti_np = array(
+    'Mon' => 'Esmaspäev',
+    'Tue' => 'Teisipäev',
+    'Wed' => 'Kolmapäev',
+    'Thu' => 'Neljapäev',
+    'Fri' => 'Reede',
+    'Sat' => 'Laupäev',
+    'Sun' => 'Pühapäev'
+);
+$nadalapaev = $eesti_np[date('D')];
+
+echo 'N:'.$nadalapaev.'<br>';
+echo '<br>';
+//Eestikeelne kuupäev koos nädalapäevaga
+echo 'Eestikeelne kuupäev koos nädalapäevaga: '.$paev.'.'.$kuu.'.'.$aasta.', '.$nadalapaev.'<br><br>';
+$tana = time();
+
+//Mitu päeva on jaanipäevani?
+//$jaanipaev = (date('d.m.Y', '24.06.2019'));
+$jaanipaev = strtotime("24 June 2019");
+$vahe = $jaanipaev - $tana;
+echo date('Y', time()).'.aasta jaanipäevani on jäänud '.round($vahe / (60*60*24)).' päeva.<br>';
+
+//Metsheina ja minu sünnipäev
+$metsheina_sp = mktime(0,0,0,11,06,1980);
+$minu_sp = mktime(0,0,0,05,05,1983);
+$metsheina_spd = date('d.m.Y', $metsheina_sp);
+$minu_spd = date('d.m.Y', $minu_sp);
+$vahe = ($minu_sp - $metsheina_sp);
+$vanusevahe = ($vahe / (60 * 60 * 24 * 365));
+echo  'Metsheina sünnikuupäev on: '.$metsheina_spd.', minu sünnikuupäev on: '.$minu_spd.
+    '. Meie vanusevahe on: '.number_format($vanusevahe, 1).'<br>';
+
+//Maailmalõpp saabub 29.02.2016! Las PHP otsustab, kas see on võimalik.
+if (checkdate(02,29,2016)) {
+    echo '29.02.2016 oleks olnud maailmalõpp!<br>';
+} else {
+    echo '29.02.2016 ei oleks olnud maailmalõpp!<br>';
+}
+
+//Kas mul on järgmisel aastal juubel
+$sel_aastal = date('Y', time());
+$jargmisel = $sel_aastal + 1;
+$vanus_jarg_a = $jargmisel - date('Y', mktime(0,0,0,6,2,1999));
+//echo $nxtyr - date('Y', mktime(0,0,0,6,2,1999));
+
+$vanus_jarg_a = (string)$vanus_jarg_a;
+if ($vanus_jarg_a[strlen($vanus_jarg_a)-1] == 0 or $vanus_jarg_a[strlen($vanus_jarg_a)-1] == 10){
+    echo 'Järgmisel aastal olen ma '.$vanusnxtyr.' aastane ning mul on juubel.';
+} else {
+    echo 'Järgmisel aastal olen ma '.$vanusnxtyr.' aastane ning mul ei ole juubelit.';
+}
