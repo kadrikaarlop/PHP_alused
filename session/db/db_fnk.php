@@ -1,12 +1,5 @@
 <?php
-/**
- * @param $hostName
- * @param $dbUser
- * @param $dbPass
- * @param $dbName
- * @return mysqli
- * Funktsioon, mis tekitab ühenduse andmebaasiga
- */
+
 function connect_db($hostName, $dbUser, $dbPass, $dbName)
 //ühenduse andmed salvestame muutuja $conn sisse,
 //selle kaudu saab serverile saata päringuid jms
