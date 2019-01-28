@@ -157,6 +157,8 @@ while (count($yks_massiiv)) {
     print "Siin on " . count($yks_massiiv) . "elementi in \$yks_massiiv <br>";
 }
 
+echo '<br>';
+
 //Massiivi osa eraldamine funktsiooni array_slice() abil
 
 $esimene = array("k", "a", "d", "r", "i");
@@ -165,6 +167,8 @@ foreach ($teine as $var)
 {
 print "$var<br>";
 }
+
+echo '<br>';
 
 //Massiivide sorteerimine
 //Tavalise massiivi sorteerimine sort() funktsiooni abil
@@ -184,6 +188,7 @@ foreach ($esimene as $key => $val)
 {
     print "$key =$val<br>";
 }
+echo '<br>';
 
 //Sidestatud massiivi sorteerimine ksort() funktsiooni abil
 
